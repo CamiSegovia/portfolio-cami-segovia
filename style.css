@@ -1,0 +1,4 @@
+@charset "UTF-8";
+body{
+    background: var(--fondo, linear-gradient(to bottom right, #FAADF2 7%, #FFF 24%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FAADF2 7%, #FFF 24%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FAADF2 7%, #FFF 24%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FAADF2 7%, #FFF 24%) top right / 50% 50% no-repeat);
+}
