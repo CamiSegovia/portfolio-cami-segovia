@@ -1,4 +1,73 @@
 @charset "UTF-8";
+@font-face {
+    font-family: "Zitter";
+    src: url(/font/zitterregular-51jza.otf);
+    font-style: normal;
+    font-weight: 400;
+}
+
 body{
-    background: var(--fondo, linear-gradient(to bottom right, #FAADF2 7%, #FFF 24%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FAADF2 7%, #FFF 24%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FAADF2 7%, #FFF 24%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FAADF2 7%, #FFF 24%) top right / 50% 50% no-repeat);
+    background: var(--fondo, linear-gradient(to bottom right, #faadf2b2 7%, #FFF 24%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #faadf2b2 7%, #FFF 24%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #faadf2b2 7%, #FFF 24%) top left / 50% 50% no-repeat, linear-gradient(to top right, #faadf2b2 7%, #FFF 24%) top right / 50% 50% no-repeat);
+}
+/*index*/
+h1{
+    font-family: "Zitter"
+}
+h1{
+    color: #005B60;
+    font-size: 12.188em;
+    display: flex;
+    justify-content: center;
+}
+.destello{
+    display: flex;
+    width: 34.563em;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 39em;
+    bottom: 34em;
+    z-index: 10;
+}
+nav ul li {
+    display: inline-block;
+    flex-direction:row;
+    justify-content: center;
+}
+.botoninicio ul a{
+    display: flex;
+    border-radius: 40px;
+    border: 2px solid var(--ROSA-OSCURO, #C077BA);
+    justify-content: center;
+    align-items: center;
+    padding: 10px 60px;
+    color: #005B60;
+    text-decoration: none;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footerinicio{
+    color: #005B60;
+    text-decoration: none;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.footerinicio p{
+    display: inline-block;
+    flex-direction:row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 60px;
+    gap: 25px;
+    border-radius: 40px;
+    border: 2px solid var(--ROSA-OSCURO, #C077BA);
 }
