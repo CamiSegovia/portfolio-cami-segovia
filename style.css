@@ -139,10 +139,10 @@ h1{
     border-radius: 40px;
     position: relative;
     left: 1300px;
-    bottom: 885px;
+    bottom: 900px;
 }
 .cami{
-    height: 200px
+    height: 10px;
 }
 h3{
     color: var(--ROSA-OSCURO, #C077BA);
@@ -170,19 +170,23 @@ h4{
     line-height: normal;
 }
 /*FIN DE SECCIONES*/
-h5{
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    color: #700020;
-    font-size: 70px;
-    width: 100%;
-    margin: 20px 0px 50px 0px;
-    box-sizing: border-box;
-    text-align: center;
+.titulomichis{
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    padding: 50px;
+    margin: 10px 100px;
 }
-
+h2{
+    font-family: "Zitter";
+    font-size: 2.5em;
+    color: #005B60;
+    align-content: center;
+}
 /*inicio del slider infinito*/
+.slider{
+    overflow: hidden;
+}
 .slide{
     display: flex;
 }
@@ -201,7 +205,6 @@ h5{
     }
 }
 
-/*FIN DE MICHIS*/
 /*Inicio de footer*/
 footer{
     display: inline-flex;
