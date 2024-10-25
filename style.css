@@ -204,6 +204,171 @@ h2{
         transform: translatex(calc(-760px * 14));
     }
 }
+/*fin de michis*/
+/* From Uiverse.io by durvish2010 */ 
+.card {
+    position: relative;
+    width: 1228px;
+    height: 764px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card img {
+    width: 1128px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    opacity: 80%;
+}
+.card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+}
+.card:hover .card__content {
+    transform: rotateX(0deg);
+}
+.card__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #005B60;
+    font-weight: 700;
+}
+/*fin de cards proyectos*/
+/*formulario*/
+.contenedorinput{
+    display: flex;
+    height: 106px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.comentarioad{
+    display: flex;
+    justify-content: center;
+    border: 30px;
+}
+
+.input-group {
+    position: relative;
+}
+.input {
+    padding: 20px;
+    border: solid 1.5px #C077BA;
+    border-radius: 30px;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #005B60;
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+}
+.user-label {
+    font-family: "Montserrat";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+    position: absolute;
+    left: 15px;
+    color: #005B60;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+}
+.input:focus ~ label, input:valid ~ label {
+    transform: translateY(-50%) scale(0.8);
+    padding: 5px;
+    background-color: #C077BA;
+    border-radius: 10px;
+    color:#005B60;
+}
+.input:focus, input:valid {
+    outline: none;
+    border: 1.5px solid #005B60;
+}
+.form{
+    display: flex;
+    justify-content: center;
+}
+.chek ul li{
+    text-decoration: none;
+}
+.chek{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Inicio de footer*/
 footer{
