@@ -187,7 +187,7 @@ h2{
     color: #005B60;
     align-content: center;
 }
-/*inicio del slider infinito*/
+/*inicio del slider infinito*/ /*todavia no me sale infinito*/
 .slider{
     overflow: hidden;
 }
@@ -369,3 +369,4 @@ footer h3{
     padding: 0px;
     list-style: none;
 }
+/*FIN, gracias por ver*/
