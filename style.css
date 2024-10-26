@@ -308,14 +308,73 @@ h2{
     display: flex;
     justify-content: center;
 }
-.chek ul li{
-    text-decoration: none;
+.chek{
+    color: #005B60;
+    display: flex;
 }
 .chek{
-    text-decoration: none;
+    justify-content: center;
+}
+.chek ul li{
+    list-style: none;
+    display: flex;
+    justify-content: start;
+}
+/*boton enviar*/ 
+.enviar{
     display: flex;
     justify-content: center;
 }
+button {
+    font-family: "Montserrat";
+    font-size: 20px;
+    background:#005B60;
+    color:#FAADF2;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+button img {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+button:hover img {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+button:hover span {
+    transform: translateX(5em);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+@keyframes fly-1 {
+    from {
+    transform: translateY(0.1em);
+    }
+to {
+    transform: translateY(-0.1em);
+    }
+}
+/*fin de boton*/
+
 
 
 
