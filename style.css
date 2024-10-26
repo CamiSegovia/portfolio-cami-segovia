@@ -24,7 +24,7 @@ nav ul li {
     display: flex; 
     flex-direction: row; 
     justify-content: space-between;
-    margin: 0px 15px;
+    margin: 0px 65px;
     align-items: center;
     height: 90px;
 }
@@ -63,7 +63,7 @@ nav ul{
 }
 .destello_nav h5{
     font-family: "Zitter";
-    font-size: 2.5em;
+    font-size: 2.2em;
     color: #005B60;
     align-content: center; /*no se alinea, ayuda*/
 }
@@ -78,11 +78,12 @@ h1{
     margin: 0px 10px;
 }
 .secciones{
+    gap: 25px;
     display: flex;
     padding: 10px;
     margin: 100px;
     width: 898px;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     align-content: center;
@@ -96,7 +97,6 @@ h1{
 .texto{
     display: flex;
     padding: 15px;
-    margin: 10px;
     justify-content: start;
     align-items: flex-start;
     border: 2px solid #005B60;
@@ -106,7 +106,6 @@ h1{
     display: flex;
     width: 350px;
     padding: 15px;
-    margin: 10px;
     justify-content: start;
     align-items: flex-start;
     border: 2px solid #005B60;
@@ -115,7 +114,6 @@ h1{
 .experiencia{
     display: flex;
     padding: 15px;
-    margin: 10px;
     justify-content: start;
     align-items: flex-start;
     border: 2px solid #005B60;
@@ -124,15 +122,21 @@ h1{
 .habilidades{
     display: flex;
     width: 350px;
-    padding: 25px;
-    flex-direction: column;
+    padding: 19px;
+    justify-content: start;
     align-items: flex-start;
-    border:2px solid #005B60;
+    border: 2px solid #005B60;
     border-radius: 30px;
 }
 .habilidades ul li{
-    display: inline-block;
-    justify-content: space-evenly;
+    display: inline-flex;
+}
+.habilidades ul{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    align-self: stretch;
 }
 .fotocami img{
     display: flex;
@@ -323,101 +327,45 @@ h2{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Inicio de footer*/
 footer{
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    box-sizing: content-box;
-    background-color: #70002028;
-    border-radius: 30px;
-}
-.iconos{
     display: flex;
     width: 100%;
-    justify-content: center;
+    background-color: #FAADF2;
+    justify-content: space-between;
+    padding: 0px 40px;
+    margin-top: 10px;
     align-items: center;
-    column-gap: 50px;
+    box-sizing: border-box;
+    border-radius: 15px;
 }
-#Contacto p{
-    font-family: "Roboto", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 15px;
-    display: flex;
-    justify-content: center;
-}
-.proyectos{
-    display: inline-flex;
-    width: 100%;
-    justify-content: space-around;
-    border-radius: 20px;
-    flex-wrap: wrap;
+footer h3{
+    font-family: "Zitter";
+    font-size: 2em;
+    color: #005B60;
     align-content: center;
-    column-gap: 60px;
+    margin: 10px;
 }
-.proyectos p{
-    font-family: "Roboto", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 15px;
+.portfolio{
+    display:flex;
+    flex-direction: column;
+}
+.portfolio ul{
+    color: #005B60;
     display: flex;
-    justify-content: center;
-    border-radius: 20px;
-    color: #700020;
-    background-color: #7000201a
+    gap: 20px;
+    align-items: center;
+    padding: 0px;
+    list-style: none;
 }
-.botonflotante{
-    position:fixed;
-    border-radius: 20px;
-    background-color: #7000204f;
-    padding: 10px;
-    border: 2px solid #700020;
-    top: 150px;
-    left: 10px;
+.redes h4{
+    font-size: 1.3em;
+    color: #005B60;
+}
+.redes ul{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 0px;
+    list-style: none;
 }
