@@ -176,10 +176,8 @@ h4{
 /*FIN DE SECCIONES*/
 .titulos{
     display: inline-flex;
-    gap: 10px;
     align-items: center;
-    padding: 50px;
-    margin: 10px 100px;
+    margin: 50px 100px 0px;
 }
 .destellogiro{
     animation: giroinf 2.5s linear infinite;
@@ -199,7 +197,6 @@ h2{
     color: #005B60;
     align-content: center;
 }
-
 /*inicio del slider infinito*/ /*todavia no me sale infinito*/
 .slider{
     overflow: hidden;
