@@ -149,7 +149,7 @@ h1{
     height: 10px;
 }
 h3{
-    color: var(--ROSA-OSCURO, #C077BA);
+    color: #C077BA;
     font-family: "Montserrat";
     font-size: 1.5em;
     font-style: normal;
@@ -174,12 +174,24 @@ h4{
     line-height: normal;
 }
 /*FIN DE SECCIONES*/
-.titulomichis{
+.titulos{
     display: inline-flex;
     gap: 10px;
     align-items: center;
     padding: 50px;
     margin: 10px 100px;
+}
+.destellogiro{
+    animation: giroinf 2.5s linear infinite;
+}
+
+@keyframes giroinf {
+    0% {
+        transform: rotate(0deg);
+}
+    100% {
+        transform: rotate(360deg);
+}
 }
 h2{
     font-family: "Zitter";
@@ -187,6 +199,7 @@ h2{
     color: #005B60;
     align-content: center;
 }
+
 /*inicio del slider infinito*/ /*todavia no me sale infinito*/
 .slider{
     overflow: hidden;
@@ -209,11 +222,17 @@ h2{
     }
 }
 /*fin de michis*/
+.cardcontenedor{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin: 25px 5px;
+}
 .card {
     position: relative;
-    width: 1228px;
-    height: 764px;
-    border-radius: 10px;
+    width: 893px;
+    height: 670px;
+    border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -223,11 +242,11 @@ h2{
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .card img {
-    width: 1128px;
+    width: 893px;
     fill: #333;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.card:hover {
+.card:hover img {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
     opacity: 80%;
@@ -249,10 +268,14 @@ h2{
 .card__title {
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 24px;
+    padding: 15px;
+    font-size: 1.5em;
     color: #005B60;
     font-weight: 700;
+    align-content: center;
+}
+.card a{
+    text-decoration: none;
 }
 /*fin de cards proyectos*/
 /*formulario*/
@@ -374,18 +397,6 @@ to {
     }
 }
 /*fin de boton*/
-
-
-
-
-
-
-
-
-
-
-
-
 /*Inicio de footer*/
 footer{
     display: flex;
@@ -427,5 +438,11 @@ footer h3{
     align-items: center;
     padding: 0px;
     list-style: none;
+}
+.flecha{
+    display: flex;
+    width: 90%;
+    margin: 50px;
+    justify-content: flex-end;
 }
 /*FIN, gracias por ver*/
