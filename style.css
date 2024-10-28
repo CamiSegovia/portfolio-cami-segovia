@@ -445,4 +445,18 @@ footer h3{
     margin: 50px;
     justify-content: flex-end;
 }
+.destsinfondo{
+    display: flex;
+    margin: 5px 40px;
+    width: 20%;
+    animation: giroinf 2.5s linear infinite;
+}
+@keyframes giroinf {
+    0% {
+        transform: rotate(0deg);
+}
+    100% {
+        transform: rotate(360deg);
+}
+}
 /*FIN, gracias por ver*/
