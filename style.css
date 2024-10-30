@@ -63,30 +63,29 @@ nav ul{
 }
 .destello_nav h5{
     font-family: "Zitter";
-    font-size: 2.2em;
+    font-size: 2em;
     color: #005B60;
-    align-content: center; /*no se alinea, ayuda*/
+    align-content: center;
 }
 /*FIN DE NAVEGADOR*/
-
 h1{
     font-family: "Zitter", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #005B60;
-    font-size: 4.5em;
+    font-size: 4.4em;
     margin: 0px 10px;
 }
 .secciones{
-    gap: 25px;
     display: flex;
-    padding: 10px;
-    margin: 100px;
-    width: 898px;
-    justify-content: center;
+    width: 891px;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     align-content: center;
+    row-gap: 25px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 10px 170px;
 }
 .titulo{
     display: inline-flex;
@@ -105,9 +104,9 @@ h1{
 .datos{
     display: flex;
     width: 350px;
-    padding: 15px;
-    justify-content: start;
-    align-items: flex-start;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
     border: 2px solid #005B60;
     border-radius: 30px;
 }
@@ -122,9 +121,9 @@ h1{
 .habilidades{
     display: flex;
     width: 350px;
-    padding: 19px;
-    justify-content: start;
-    align-items: flex-start;
+    padding: 20px 30px;
+    justify-content: center;
+    align-items: center;
     border: 2px solid #005B60;
     border-radius: 30px;
 }
@@ -142,8 +141,8 @@ h1{
     display: flex;
     border-radius: 40px;
     position: relative;
-    left: 1300px;
-    bottom: 900px;
+    left: 1250px;
+    bottom: 775px;
 }
 .cami{
     height: 10px;
@@ -285,7 +284,9 @@ h2{
 }
 .comentarioad{
     display: flex;
+    align-items: center;
     justify-content: center;
+    gap: 40px;
     border: 30px;
 }
 .input-group {
@@ -327,18 +328,6 @@ h2{
 .form{
     display: flex;
     justify-content: center;
-}
-.chek{
-    color: #005B60;
-    display: flex;
-}
-.chek{
-    justify-content: center;
-}
-.chek ul li{
-    list-style: none;
-    display: flex;
-    justify-content: start;
 }
 /*boton enviar*/ 
 .enviar{
@@ -393,6 +382,7 @@ to {
     transform: translateY(-0.1em);
     }
 }
+
 /*fin de boton*/
 /*Inicio de footer*/
 footer{
@@ -456,4 +446,28 @@ footer h3{
         transform: rotate(360deg);
 }
 }
+/*FOTORAMA*/
+.galeria{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    row-gap: 25px;
+    flex-wrap: wrap;
+    margin: 80px 5px ;
+}
+.descripcion{
+    display: inline-flex;
+    align-items: center;
+    gap: 335px;
+}
+.descripcion p{
+    color: #005B60;
+    font-family: Montserrat;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
 /*FIN, gracias por ver*/
