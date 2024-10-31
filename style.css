@@ -277,17 +277,26 @@ h2{
 /*formulario*/
 .contenedorinput{
     display: flex;
-    height: 106px;
+    height: 90px;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 20px ;
 }
 .comentarioad{
+    width: 30%;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 40px;
     border: 30px;
+}
+.contenedorcomen{
+    display: flex;
+    justify-content: center;
+}
+.comentarioad .input-group input{
+    padding: 20px 140px;
 }
 .input-group {
     position: relative;
