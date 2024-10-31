@@ -488,7 +488,10 @@ footer h3{
     display: flex;
     justify-content: center;
 }
-
+.playlist iframe{
+    width: 80%;
+    margin: 50px 0px;
+}
 
 
 /*FIN, gracias por ver*/
