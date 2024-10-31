@@ -198,14 +198,19 @@ h2{
 }
 /*inicio del slider infinito*/ /*todavia no me sale infinito*/
 .slider{
+    margin: 20px 0px;
     overflow: hidden;
 }
 .slide{
+    gap: 20px;
     display: flex;
+}
+.slide img{
+    border-radius: 40px;
 }
 .slider .slide-track{
     animation: scroll 50s linear infinite;
-    width:(calc (760px * 28)); /*calcular operacion*/
+    width:(calc (760px * 50)); /*calcular operacion*/
 }
 @keyframes scroll { /*permite animar*/
     0%{
@@ -221,13 +226,13 @@ h2{
 .cardcontenedor{
     display: flex;
     justify-content: center;
-    gap: 35px;
+    gap: 150px;
     margin: 25px 5px;
 }
 .card {
     position: relative;
-    width: 893px;
-    height: 670px;
+    width: 666px;
+    height: 497px;
     border-radius: 30px;
     display: flex;
     align-items: center;
@@ -238,7 +243,7 @@ h2{
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .card img {
-    width: 893px;
+    width: 666px;
     fill: #333;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -437,7 +442,7 @@ footer h3{
 }
 .flecha{
     display: flex;
-    width: 90%;
+    width: 85%;
     margin: 50px;
     justify-content: flex-end;
 }
@@ -505,6 +510,5 @@ footer h3{
     width: 80%;
     margin: 50px 0px;
 }
-
 
 /*FIN, gracias por ver*/
