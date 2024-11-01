@@ -94,7 +94,6 @@ h1{
 }
 .texto{
     display: flex;
-    padding: 15px;
     justify-content: start;
     align-items: flex-start;
     border: 2px solid #005B60;
@@ -209,7 +208,7 @@ h4{
         display: flex;
         flex-direction: column;
         width: 95%;
-        margin: 5px 10px;
+        margin: 5px 40px;
         row-gap: 15px;
     }
     .titulo {
@@ -349,7 +348,7 @@ h2{
     display: flex;
     justify-content: center;
     gap: 50px;
-    margin: 25px 5px;
+    margin: 25px 25px;
 }
 .card {
     position: relative;

@@ -1,5 +1,7 @@
 En este trabajo, se realizó un portfolio basado en el tp anterior, donde se mejoraron secciones y se destacaron los trabajos realizados durante la carrea de Diseño y Comunicación Visual. Además se diseño un formulario para que el cliente pueda contratarme.
 
+Se aplico Media Query al index, nav, footer y formulario.
+
 Editor utilizado: Visual Studio Code.
 
 RESOLUCIÓN DE PANTALLA: 1920*1080
