@@ -577,6 +577,7 @@ footer h3{
     flex-direction: column;
 }
 .portfolio ul{
+    font-family: "Montserrat";
     color: #005B60;
     display: flex;
     gap: 20px;
