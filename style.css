@@ -6,7 +6,7 @@
     font-weight: 400;
 }
 body{
-    background: linear-gradient(to bottom right, #FAADF2 7%, #FFF 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FAADF2 7%, #FFF 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FAADF2 7%, #FFF 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FAADF2 7%, #FFF 50%) top right / 50% 50% no-repeat;
+    background: radial-gradient(circle, rgba(251,195,255,0.7147233893557423) 31%, rgba(255,255,255,1) 49%);
 }
 header{
     background-color: #FFE6FF;
@@ -89,8 +89,10 @@ h1{
 }
 .titulo{
     display: inline-flex;
+    width: 100%;
     align-items: center;
     margin: 10px;
+    justify-content: space-between;
 }
 .texto{
     display: flex;
@@ -209,15 +211,14 @@ h4{
     .secciones {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 95%;
         margin: 5px 10px;
-        align-items: center;
         row-gap: 15px;
     }
     .titulo {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 20px;
         margin: 5px;
     }
     .texto, .datos, .experiencia, .habilidades {
@@ -405,14 +406,14 @@ h2{
 }
 /*fin de cards proyectos*/
 /*formulario*/
-.contenedorinput{
+.contenedorinput {
     display: flex;
     height: 90px;
     align-items: center;
     justify-content: center;
-    gap: 20px ;
+    gap: 20px;
 }
-.comentarioad{
+.comentarioad {
     width: 30%;
     height: 90px;
     display: flex;
@@ -420,51 +421,53 @@ h2{
     justify-content: center;
     gap: 40px;
     border: 30px;
-}
-.contenedorcomen{
+    }
+.contenedorcomen {
     display: flex;
     justify-content: center;
 }
-.comentarioad .input-group input{
+.comentarioad .input-group input {
     padding: 20px 140px;
 }
 .input-group {
     position: relative;
 }
 .input {
+    width: 100%;
     padding: 20px;
     border: solid 1.5px #C077BA;
     border-radius: 30px;
     background: none;
-    padding: 1rem;
     font-size: 1rem;
     color: #005B60;
-    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+    transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-sizing: border-box;
 }
 .user-label {
     font-family: "Montserrat";
     font-size: 1em;
-    font-style: normal;
     font-weight: 500;
     position: absolute;
     left: 15px;
     color: #005B60;
     pointer-events: none;
     transform: translateY(1rem);
-    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input:focus ~ label, input:valid ~ label {
+.input:focus ~ .user-label,
+.input:valid ~ .user-label {
     transform: translateY(-50%) scale(0.8);
     padding: 5px;
     background-color: #C077BA;
     border-radius: 10px;
-    color:#005B60;
+    color: #005B60;
 }
-.input:focus, input:valid {
+.input:focus,
+.input:valid {
     outline: none;
     border: 1.5px solid #005B60;
 }
-.form{
+.form {
     display: flex;
     justify-content: center;
 }
@@ -522,6 +525,34 @@ to {
     }
 }
 /*fin de boton*/
+/*media para pantalla 600px*/
+@media screen and (max-width: 600px) {
+    .contenedorinput {
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+    }
+
+    .comentarioad {
+        width: 90%;
+        gap: 20px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .comentarioad .input-group input {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .user-label {
+        font-size: 0.9em;
+    }
+
+    .input {
+        padding: 15px;
+    }
+}
 /*Inicio de footer*/
 footer{
     display: flex;
